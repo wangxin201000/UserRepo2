@@ -1,15 +1,4 @@
-import sys
-import os
-
-curPath = os.path.abspath(os.path.dirname(__file__))
-rootPath = os.path.split(curPath)[0]
-sys.path.append(rootPath)
-
-import git
-
-def ProcessConfig():
-    print("Start processing config...")
-    
-    configRepo = git.Repo.clone_from(r'https://github.com/wangxin201000/DataZenPublicDataRepoConfig.git', r'd:\zen\usecasecrawler\ConfigRepo', branch='master')
-    
-ProcessConfig()
+def Say_Hello():
+    print("Hello hell")
+ 
+Say_Hello()
